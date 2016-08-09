@@ -1,0 +1,12 @@
+
+body {
+  width: 1200px;
+  background: white;
+  margin: 0 auto;
+}
+
+header {
+  width: 879px;
+  margin: 0 auto;
+  color: red;
+}
