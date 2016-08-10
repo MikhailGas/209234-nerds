@@ -5,8 +5,38 @@ body {
   margin: 0 auto;
 }
 
-header {
+.container {
   width: 879px;
   margin: 0 auto;
-  color: red;
 }
+.divide {
+  width: 100%;
+  height: 2px;
+  background: #eeeeee;
+}
+header {
+  background: #eeeeee;
+}
+.clients li {
+  display: inline-block;
+  width: auto;
+  
+}
+.clients .glukhanko:hover {
+  background: url("../img/glukhanko-hover.png") no-repeat;
+}
+.clients .htmlacademy:hover {
+  background: url("../img/htmlacademy-hover.png") no-repeat;
+}
+.clients .barbershop:hover {
+  background: url("../img/barbershop-hover.png") no-repeat;
+}
+figure {
+  position: relative;
+}
+.marker {
+  position: absolute;
+  left: 840px;
+  top: 110px;
+}
+
