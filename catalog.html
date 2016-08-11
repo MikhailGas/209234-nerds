@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title> Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="img/logo-header.png" width="139" height="56" alt="logo">
+        </div>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="index.html#studio">Студия</a></li>
+            <li><a href="index.html#clients">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="index.html#contact">Контакты</a></li>
+            <li class="basket"><a href="#">Корзина</a></li>
+          </ul>
+        </nav>
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form method="post" name="filtr">
+          <b>Стоимость:</b>
+          <div class="range">
+          
+          </div>
+          <label>от
+            <input type="text" value="0" name="min">
+          </label>
+          <label>до
+            <input type="text" value="15000" name="min">
+          </label>
+          <input type="radio" name="markup" id="adaptive">
+          <label for="adaptive">Адаптивная</label>
+          <input type="radio" name="markup" id="fix">
+          <label for="fix">Фиксированная</label>
+          <input type="radio" name="markup" id="rubber">
+          <label for="rubber">Резиновая</label>
+          <b>Особенности:</b>
+          <input type="checkbox" id="slider" name="slider" value="slider">
+          <label for="slider">Слайдер</label>
+          <input type="checkbox" id="advant" name="advant" value="advant">
+          <label for="advant">Блок преимуществ</label>
+          <input type="checkbox" id="news" name="news" value="news">
+          <label for="news">Новости</label>
+          <input type="checkbox" id="galery" name="galery" value="galery">
+          <label for="galery">Галерея</label>
+          <input type="checkbox" id="basket" name="basket" value="basket">
+          <label for="basket">Корзина</label>
+          <a type="">Показать</a>
+        </form>
+        <div class="sort">
+          <p>Сортировать:</p>
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По функционалу</a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </div>
+    </main>
+    <div class="contact" id="contact">
+      <figure>
+        <img class="map" src="img/map.png" width="1199" height="416" alt="map">
+        <img class="marker" src="img/marker.png" width="231" height="190" alt="marker">
+        <div class="write">
+          <b>NЁRDS DESIGN STUDIO</b>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button type="button">Напишите нам</button>
+        </div>
+      </figure>
+    </div>  
+    <footer>
+      <div class="container">
+        <div class="social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
+        <div class="content">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>  
+    </footer>
+  </body>
+</html>
