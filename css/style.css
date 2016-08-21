@@ -1,4 +1,3 @@
-
 body {
   font-size: 16px;
   line-height: 22px;
@@ -70,6 +69,15 @@ nav a {
   text-decoration: none;
   color: #000;
 }
+nav a:hover {
+  color: #fb565a;
+}
+nav a:active {
+  color: rgba(0, 0, 0, 0.4);
+}
+.active {
+  border-bottom: 2px solid #fb565a;
+}
 .divide {
   width: 100%;
   height: 2px;
@@ -119,6 +127,27 @@ h2 {
   color: #fff;
   background: #fb565a;
   font-size: 12px;
+
+}
+.social-btn {
+  display: inline-block;
+  text-align: center;
+  line-height: 62px;
+  vertical-align: middle;
+  margin-right: 15px;
+  margin-top: 60px;
+  padding: 0;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #e1e1e1;
+}
+.social-btn:hover {
+  background: #fb565a;
+}
+.social-btn:active {
+  background:#d6494d;
 }
 .btn-header {
   width: 240px;
@@ -342,4 +371,15 @@ form input[type="checkbox"] {
 .catalog {
   background: #eeeeee;
   min-height: 328px;
+}
+footer {
+  min-height: 216px;
+}
+.social {
+  
+}
+.content {
+  display: inline-block;
+  line-height: 216px;
+  
 }
