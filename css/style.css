@@ -87,7 +87,7 @@ nav a:active {
   background: #eeeeee;
   min-height: 435px;
 }
-.slide-swith {
+.swith {
   position: absolute;
   left: 400px;
   top: 250px;
