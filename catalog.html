@@ -9,13 +9,13 @@
   </head>
   <body>
     <header class="catalog">
-      <div class="container clearfix">
-        <nav class="main-menu">
+      <div class="container">
+        <nav class="main-menu clearfix">
           <a class="left-column logo" href="/index.html"><img src="img/logo-header.png" width="139" height="56" alt="logo"></a>
           <ul class="right-column main-menu">
             <li><a href="index.html#studio">Студия</a></li>
             <li><a href="index.html#clients">Клиенты</a></li>
-            <li class="active"><a href="catalog.html">Магазин</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
             <li><a href="index.html#contact">Контакты</a></li>
             <li><a class="basket"href="#"><span class="icon-basket"></span> Корзина</a></li>
           </ul>
@@ -25,53 +25,128 @@
     </header>
     <main>
       <div class="container clearfix">
-        <form class="left-column" method="post" name="filtr">
+        <form class="filter left-column" method="post" name="filtr">
           <b>Стоимость:</b>
           <div class="range">
-          
+            <div class="circle1"></div>
+            <div class="circle2"></div>
           </div>
-          <label>от
+          <label class="num-range">от
             <input type="text" value="0" name="min">
           </label>
-          <label>до
-            <input type="text" value="15000" name="min">
+          <label class="last-num num-range">до
+            <input  type="text" value="15000" name="min">
           </label>
-          <input type="radio" name="markup" id="adaptive">
-          <label for="adaptive">Адаптивная</label>
+          <b>Сетка:</b>
+          <input type="radio" name="markup" id="adaptive" checked> 
+          <label class="radio" for="adaptive">
+             Адаптивная
+          </label>
           <input type="radio" name="markup" id="fix">
-          <label for="fix">Фиксированная</label>
+          <label class="radio" for="fix">
+             Фиксированная
+          </label>
           <input type="radio" name="markup" id="rubber">
-          <label for="rubber">Резиновая</label>
+          <label class="radio" for="rubber">
+             Резиновая
+          </label>
           <b>Особенности:</b>
-          <input type="checkbox" id="slider" name="slider" value="slider">
-          <label for="slider">Слайдер</label>
+          <input type="checkbox" id="slider" name="slider" value="slider" checked>
+          <label class="checkbox" for="slider">
+             Слайдер
+          </label>
           <input type="checkbox" id="advant" name="advant" value="advant">
-          <label for="advant">Блок преимуществ</label>
-          <input type="checkbox" id="news" name="news" value="news">
-          <label for="news">Новости</label>
+          <label class="checkbox" for="advant">
+             Блок преимуществ
+          </label>
+          <input type="checkbox" id="news" name="news" value="news" checked>
+          <label class="checkbox" for="news">
+             Новости
+          </label>
           <input type="checkbox" id="galery" name="galery" value="galery">
-          <label for="galery">Галерея</label>
+          <label class="checkbox" for="galery">
+             Галерея
+          </label>
           <input type="checkbox" id="basket" name="basket" value="basket">
-          <label for="basket">Корзина</label>
-          <a type="">Показать</a>
+          <label class="checkbox" for="basket">
+             Корзина
+          </label>
+          <a class="filter-btn" href="#">Показать</a>
         </form>
         <div class="right-column">
           <div class="sort">
-            <p>Сортировать:</p>
+            <b>Сортировать:</b>
             <a href="#">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По функционалу</a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a class="up" href="#"><span class="icon-up-dir"></span></a>
+            <a class="down" href="#"><span class="icon-down-dir"></span></a>
           </div>
-          <ul class="items">
-            <li><img src="img/aviator.png" width="240" height="240"></li>
-            <li><img src="img/sqspc2-1.png" width="240" height="240"></li>
-            <li><img src="img/forte.png" width="240" height="240"></li>
-            <li><img src="img/marque.png" width="240" height="240"></li>
-            <li><img src="img/avenue.png" width="240" height="240"></li>
-            <li><img src="img/dovetail.png" width="240" height="240"></li>
-          </ul>
+          <div class="items">
+            <ul>
+              <li>
+                <div class="head"></div>
+                <img src="img/aviator.png" width="240" height="240">
+                <div class="price">
+                  <b>Aviator</b>
+                  <p class="aviator">Одностраничный макет с авторским дизайном</p>
+                  <a class="btn" href="#">8000 Р.</a>
+                </div>
+              </li>
+              <li>
+                <div class="head"></div>
+                <img src="img/sqspc2-1.png" width="240" height="240">
+                <div class="price">
+                  <b>Sunset</b>
+                  <p>Интернет-магазин с личным кабинетом</p>
+                  <a class="btn" href="#">10000 Р.</a>
+                </div>
+              </li>
+              <li>
+                <div class="head"></div>
+                <img src="img/forte.png" width="240" height="240">
+                <div class="price">
+                  <b>Forte</b>
+                  <p>Отличный макет для личного блога</p>
+                  <a class="btn" href="#">5000 Р.</a>
+                </div>
+              </li>
+              <li>
+                <div class="head"></div>
+                <img src="img/marque.png" width="240" height="240">
+                <div class="price">
+                  <b>Modern organic tha!</b>
+                  <p class="modern">Сайт для ресторана быстрого питания</p>
+                  <a class="btn" href="#">12000 Р.</a>
+                </div>
+              </li>
+              <li>
+                <div class="head"></div>
+                <img src="img/avenue.png" width="240" height="240">
+                <div class="price">
+                  <b>Avenue</b>
+                  <p>Макет для блога о путешествиях</p>
+                  <a class="btn" href="#">8000 Р.</a>
+                </div>
+              </li>
+              <li>
+                <div class="head"></div>
+                <img src="img/dovetail.png" width="240" height="240">
+                <div class="price">
+                  <b>Dovetail</b>
+                  <p>Интернет-магазин с галереей товаров</p>
+                  <a class="btn" href="#">14000 Р.</a>
+                </div>
+              </li>
+            </ul>
+            <div class="page-num">
+              <a class="chk" href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a class="next" href="#">Следующая</a>
+              
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -82,7 +157,7 @@
             <b>NЁRDS DESIGN STUDIO</b>
             <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a class="btn" href="#">Напишите нам</a>
+            <a class="write-us btn btn-red" href="mail.html">Напишите нам</a>
           </div>
           <img class="right-column marker" src="img/marker.png" width="231" height="190" alt="marker">
         </div>
@@ -100,6 +175,33 @@
         </div>
       </div>  
     </footer>
-    
+    <div class="modal-overlay"></div>
+    <div class="modal">
+      
+      <a class="modal-close" href="index.html"></a>
+      <div class="modal-container">
+        
+          <form method="post">
+            <div class="clearfix">
+              <div class="left-column">
+                <label for="name">
+                  Ваше имя:              
+                </label>
+                <input type="text" id="name" name="name" placeholder="Представьтесь пожалуйста">
+              </div>
+              <div class="right-column">
+                <label for="e-mail">
+                  Ваш e-mail:
+                </label>
+                <input type="text" id="e-mail" name="e-mail" placeholder="Для отправки ответа">
+              </div>
+            </div>
+            <label>Текст письма:</label>
+            <textarea cols="10" name="text" placeholder="В свободной форме"></textarea>
+            <input class="btn btn-red" type="submit">
+          </form>
+      </div>
+    </div>
+    <script src="js/modal.js" type="text/javascript"></script>
   </body>
 </html>

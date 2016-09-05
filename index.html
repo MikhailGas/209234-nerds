@@ -9,8 +9,8 @@
   </head>
   <body>
     <header class="main">
-      <div class="container clearfix">
-        <nav class="main-menu">
+      <div class="container">
+        <nav class="main-menu clearfix">
           <a class="left-column logo" href="/index.html"><img src="img/logo-header.png" width="139" height="56" alt="logo"></a>
           <ul class="right-column main-menu">
             <li><a href="#studio">Студия</a></li>
@@ -81,12 +81,11 @@
             </li>
           </ul>
         </div>
-        <div class="divide"></div>
         <div class="clearfix studio" id="studio">
           <div class="left-column">
             <h2>Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</h2>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический<br> расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-            <p class="uppercase">Выполняем заказы на разработку:</p>
+            <h3>Выполняем заказы на разработку:</h3>
             <ul>
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для iOS и Android</li>
@@ -96,7 +95,7 @@
           <div class="right-column">
             <img src="img/logo-studio.png" width="187" height="75" alt="logo">
             <p class="center uppercase">Since 2004</p>
-            <p class="down uppercase">Как мы работаем:</p>
+            <h3 class="down">Как мы работаем:</h3>
             <ul>
               <li>С самоотдачей 146%</li>
               <li>Соблюдая сроки на 100%</li>
@@ -118,7 +117,6 @@
             </li>
           </ul>
         </div>
-        <div class="divide"></div>
       </div>  
     </main>
     <div class="contact" id="contact">
@@ -128,8 +126,7 @@
             <b>NЁRDS DESIGN STUDIO</b>
             <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <!--<a class="btn btn-red" href="#">Напишите нам</a>-->
-            <label class="btn btn-red" for="open">Напишите нам</label>
+            <a class="write-us btn btn-red" href="mail.html">Напишите нам</a>
           </div>
           <img class="right-column marker" src="img/marker.png" width="231" height="190" alt="marker">
         </div>
@@ -147,12 +144,10 @@
         </div>
       </div>  
     </footer>
-    <input type="radio" name="modal" id="open">
-    <input type="radio" name="modal" id="close" checked>
     <div class="modal-overlay"></div>
     <div class="modal">
       
-      <label class="modal-close" for="close"></label>
+      <a class="modal-close" href="index.html"></a>
       <div class="modal-container">
         
           <form method="post">
@@ -167,7 +162,7 @@
                 <label for="e-mail">
                   Ваш e-mail:
                 </label>
-                <input type="text" id="e-mail" name="name" placeholder="Для отправки ответа">
+                <input type="text" id="e-mail" name="e-mail" placeholder="Для отправки ответа">
               </div>
             </div>
             <label>Текст письма:</label>
@@ -176,6 +171,6 @@
           </form>
       </div>
     </div>
-    <script src="slider.js" type="text/javascript"></script>
+    <script src="js/modal.js" type="text/javascript"></script>
   </body>
 </html>
