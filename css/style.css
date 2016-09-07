@@ -928,6 +928,7 @@ footer span {
   margin-bottom: 47px;
 }
 .items .head {
+  position: relative;
   width: 240px;
   height: 30px;
   background: #f1f1f1;
@@ -938,7 +939,7 @@ footer span {
   display: block;
 }
 .items li:hover > .head {
-  background: url("../img/browser.png") no-repeat;
+  background: #797979;
 }
 
 .page-num a {
@@ -1072,4 +1073,38 @@ nav span {
 .page-num {
   margin-left: 3px;
   margin-bottom: 2px;
+}
+
+
+
+.circle {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 17px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 34px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
 }
