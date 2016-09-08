@@ -17,6 +17,7 @@ body {
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
   display: inline-block;
+  vertical-align: inherit;
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
@@ -101,7 +102,7 @@ nav a:active {
   padding: 30px 0;
 }
 main {
-  padding-top: 75px;
+  padding-top: 80px;
 }
 h2 {
   font-size: 36px;
@@ -130,6 +131,7 @@ h2 {
 }
 .studio li::before {
   display: inline-block;
+  vertical-align: inherit;
   margin-bottom: 4px;
   margin-right: 10px;
   content: "";
@@ -152,10 +154,7 @@ h2 {
 .right-column {
   float: right;
 }
-.slider-2,
-.slider-3 {
-  
-}
+
 /* кнопки */
 .btn {
   display: block;
@@ -245,6 +244,7 @@ ul {
   margin-bottom: 0;
 }
 .offers p {
+  width: 240px;
   margin-top: 15px;
   margin-bottom: 26px;
   font-size: 15px;
@@ -363,6 +363,7 @@ form {
 }
 
 .slide p {
+  width: 462px;
   margin-top: 20px;
   margin-bottom: 26px;
   font-weight: 500;
@@ -426,7 +427,8 @@ form {
 
 
 .contact {
-  background: url(../img/map.jpg) no-repeat center;
+  background: #b5b5b5 url(../img/map.jpg) no-repeat center;
+  max-width: 1200px;
   min-height: 416px;
   margin: 0 auto;
   margin-top: 80px;
@@ -480,6 +482,7 @@ p {
 
 nav li {
   display: inline-block;
+  vertical-align: inherit;
   margin-top: 0px;
   margin-right: 40px;
   padding-right: 0px;
@@ -508,7 +511,7 @@ h1 {
 .catalog {
   background: #eeeeee;
   padding-top: 30px;
-  padding-bottom: 55px;
+  padding-bottom: 52px;
 }
 .contact p {
   margin-top: 12px;
@@ -535,6 +538,7 @@ footer p {
 }
 .content {
   display: inline-block;
+  vertical-align: inherit;
   line-height: 216px;
   margin-right: 18px;
 }
@@ -697,6 +701,7 @@ footer span {
 }
 .filter .num-range {
   display: inline-block;
+  vertical-align: baseline;
   
 }
 .filter label {
@@ -764,7 +769,7 @@ footer span {
   box-shadow: 0 0 0 3px #b5b5b5;
 }
 .filter .radio:hover {
-  color: #b5b5b5;
+  color: #000;
   
 }
 
@@ -812,6 +817,7 @@ footer span {
 }
 .filter-btn {
   display: inline-block;
+  vertical-align: middle;
   padding: 14px 46px;
   margin-top: 35px;
   background: #f1f1f1;
@@ -856,6 +862,7 @@ footer span {
 .items li {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   margin-left: 2px;
   margin-top: -2px;
   margin-right: 74px;
@@ -944,6 +951,7 @@ footer span {
 
 .page-num a {
   display: inline-block;
+  vertical-align: inherit;
   padding: 12px 14px;
   color: #000;
   font-size: 12px;
@@ -1108,3 +1116,9 @@ nav span {
   border-radius: 50%;
   background: #fff;
 }
+
+.slides h2 {
+  width: 462px;
+}
+
+
