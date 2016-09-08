@@ -427,11 +427,13 @@ form {
 
 
 .contact {
-  background: #b5b5b5 url(../img/map.jpg) no-repeat center;
+  /*background: #b5b5b5 url(../img/map.jpg) no-repeat center;*/
+	position: relative;
   max-width: 1200px;
   min-height: 416px;
   margin: 0 auto;
   margin-top: 80px;
+	background: #b5b5b5;
 }
 
 .offers {
@@ -475,7 +477,8 @@ p {
 }
 
 .write {
-  margin-top: 85px;
+	position: absolute;
+  top: 85px;
   background: #ffffff;
   padding: 20px 20px;
 }
